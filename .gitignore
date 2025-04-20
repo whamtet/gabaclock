@@ -1,0 +1,7 @@
+dist/index.html
+.idea
+node_modules
+output.css
+
+# Local Netlify folder
+.netlify

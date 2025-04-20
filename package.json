@@ -1,0 +1,14 @@
+{
+  "name": "gabaclock",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -m -i input.css -o dist/output.css",
+    "tailwind:watch": "tailwindcss -i input.css -o dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
