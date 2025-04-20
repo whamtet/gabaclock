@@ -17,7 +17,6 @@
  (for [i (range 1 13)]
    (let [t (* 2 Math/PI i 1/12)
          x (+ 48.25 (* r (Math/sin t)))
-         y (+ 52 (* -1 r (Math/cos t)))
-         textLength (if (< i 10) 0.1 0.3)]
+         y (+ 52 (* -1 r (Math/cos t)))]
      [:text {:x x :y y :fill "black" :font-size "5"} i])))
 
