@@ -6,6 +6,7 @@ const rMinute = 35;
 
 const hourEl = document.querySelector("#hour");
 const minuteEl = document.querySelector("#minute");
+const img = document.querySelector("img");
 
 const setTime = () => {
     const hour = Math.floor(Math.random() * 12) + 1;
@@ -27,7 +28,18 @@ const setTime = () => {
 
     hourEl.setAttribute("x2", xHour);
     hourEl.setAttribute("y2", yHour);
-}
+};
 
 setTime();
 document.querySelector("svg").addEventListener("click", setTime);
+
+const clickImg = () => {
+    if (img.classList.contains("opacity-50")) {
+        img.classList.remove("opacity-50");
+        img.src = Math.random() > 0.5 ? "heads.jpg" : "tails.jpg";
+    } else {
+        img.classList.add("opacity-50");
+    }
+};
+
+img.addEventListener("click", clickImg);
